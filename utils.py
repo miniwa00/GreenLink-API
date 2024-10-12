@@ -38,11 +38,10 @@ def create_data_by_feature_plot(dropdown_value="energy_usage"):
         yaxis_title=dropdown_value.capitalize(),
         legend_title="Company",
         font=dict(
-            color="white",
             size=14,
             weight="bold",
         ),
-        paper_bgcolor="#43A047",
+        # paper_bgcolor="#43A047",
         xaxis=dict(
             tickmode="linear",
             tick0=min(years),
@@ -90,11 +89,10 @@ def create_company_data_plot(company_name="삼성전자"):
         yaxis_title="Values",
         legend_title="Metrics",
         font=dict(
-            color="white",
             size=14,
             weight="bold",
         ),
-        paper_bgcolor="#43A047",
+        # paper_bgcolor="#43A047",
         xaxis=dict(
             tickmode="linear",
             tick0=min(years),
@@ -124,11 +122,10 @@ def create_company_average_plot(company_name="삼성전자"):
         yaxis_title="Values",
         showlegend=False,
         font=dict(
-            color="white",
             size=14,
             weight="bold",
         ),
-        paper_bgcolor="#43A047",
+        # paper_bgcolor="#43A047",
     )
 
     return fig
@@ -172,11 +169,10 @@ def create_yearly_average_plot():
         legend_title="Metrics",
         xaxis=dict(tickmode="linear", tick0=min(map(int, years)), dtick=1),
         font=dict(
-            color="white",
             size=14,
             weight="bold",
         ),
-        paper_bgcolor="#43A047",
+        # paper_bgcolor="#43A047",
     )
 
     return fig
@@ -210,11 +206,10 @@ def create_data_by_year_plot(year=2023):
         barmode="group",
         legend_title="Metrics",
         font=dict(
-            color="white",
             size=14,
             weight="bold",
         ),
-        paper_bgcolor="#43A047",
+        # paper_bgcolor="#43A047",
     )
 
     return fig
